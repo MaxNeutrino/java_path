@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-22T12:51:25+02:00</updated><id>http://localhost:4000//</id><title type="html">JAVA_PATH</title><subtitle>Web Developer from Somewhere</subtitle><entry><title type="html">Hello World</title><link href="http://localhost:4000/Hello-World/" rel="alternate" type="text/html" title="Hello World" /><published>2016-11-22T00:00:00+02:00</published><updated>2016-11-22T00:00:00+02:00</updated><id>http://localhost:4000/Hello-World</id><content type="html" xml:base="http://localhost:4000/Hello-World/">&lt;p&gt;I can not ignored first step in any path of programmer - “Hello world!”&lt;/p&gt;
+
+&lt;p&gt;First when I learnt Java this example used with different strings like “Kiss my shiny metal ass”. Eah, quote Bender is fun.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;It is my first program, maybe it is first program for all programmers. It is begin. The running program just print string in terminal.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Main&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><summary type="html">I can not ignored first step in any path of programmer - “Hello world!”
+
+First when I learnt Java this example used with different strings like “Kiss my shiny metal ass”. Eah, quote Bender is fun.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/hello.jpg" /></entry><entry><title type="html">Introduction</title><link href="http://localhost:4000/Introduction/" rel="alternate" type="text/html" title="Introduction" /><published>2016-11-21T00:00:00+02:00</published><updated>2016-11-21T00:00:00+02:00</updated><id>http://localhost:4000/Introduction</id><content type="html" xml:base="http://localhost:4000/Introduction/">&lt;p&gt;I created this blog because I want use and train my knowledge.
+More will be about Java programming language, but I not leave you without motivation posts and jokes.
+Here I will write my path, my experience in Java learning. If I use examples from books or in other places then I try explain more then the author of book, have other look or experience.
+I hope this blog will be useful for you.&lt;/p&gt;
+
+&lt;p&gt;P.S. Sorry for my grammar error. If it is not difficult for you, please, tell me more about my mistakes in discussion.&lt;/p&gt;</content><summary type="html">I created this blog because I want use and train my knowledge.
+More will be about Java programming language, but I not leave you without motivation posts and jokes.
+Here I will write my path, my experience in Java learning. If I use examples from books or in other places then I try explain more then the author of book, have other look or experience.
+I hope this blog will be useful for you.
+
+P.S. Sorry for my grammar error. If it is not difficult for you, please, tell me more about my mistakes in discussion.</summary></entry></feed>

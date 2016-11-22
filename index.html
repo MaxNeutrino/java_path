@@ -1,0 +1,97 @@
+---
+layout: default
+---
+
+<div class="posts">
+    {% for post in paginator.posts %}
+    <article class="post">
+
+        <div class="card-wrapper">
+
+            <div class="card-adds mdl-card mdl-shadow--2dp">
+                {% if post.image %}
+                <div class="card-image"
+                     style="background: url({{ site.baseurl }}/images/posts/{{ post.image }}) center / cover"></div>
+                {% endif %}
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text mdl-color-text--blue-grey-900">{{ post.title }}</h2>
+                </div>
+                <div class="mdl-card__supporting-text mdl-color-text--blue-grey-700">
+                    <div class="date">
+                        <p class="date">
+                            <span class="mdl-color-text--blue-grey-300">{{ post.date | date: "%B %e, %Y" }}</span>
+                        </p>
+                    </div>
+                    <div class="entry">
+                        {{ post.excerpt }}
+                    </div>
+                </div>
+                <div class="mdl-card__actions mdl-card--border ">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect read-more"
+                       href="{{ site.baseurl }}{{ post.url }}">
+                        Read More</a>
+                </div>
+            </div>
+        </div>
+
+    </article>
+    {% endfor %}
+</div>
+
+<!-- Page navigation links -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+    <!-- Left Arrow -->
+    {% if paginator.previous_page %}
+    <a class="nav-foot pages"
+       href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+            <i class="material-icons">navigate_before</i>
+        </button>
+    </a>
+    {% else %}
+    <a class="pages">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-color-text--blue-grey-400 disabled">
+            <i class="material-icons">navigate_before</i>
+        </button>
+    </a>
+    {% endif %}
+
+    <!-- Page Numbers -->
+
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <button class="my-mdl-button">{{ page }}</button>
+    {% elsif page == 1 %}
+    <a class="nav-foot" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">
+        <button class="my-mdl-button-transparent mdl-js-button mdl-js-ripple-effect mdl-color-text--blue-grey-700">
+            {{ page }}
+        </button>
+    </a>
+    {% else %}
+    <a class="nav-foot"
+       href="{{ site.paginate_path | prepend: '/' | prepend: site.baseurl | replace: ':num', page | replace: '//', '/' }}">
+        <button class="my-mdl-button-transparent mdl-js-button mdl-js-ripple-effect mdl-color-text--blue-grey-700">
+            {{ page }}
+        </button>
+    </a>
+    {% endif %}
+    {% endfor %}
+
+    <!-- Right Arrow -->
+    {% if paginator.next_page %}
+    <a class="nav-foot  pages" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored mdl-js-ripple-effect">
+            <i class="material-icons">navigate_next</i>
+        </button>
+    </a>
+    {% else %}
+    <a class=" pages">
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-color-text--blue-grey-400 disabled">
+            <i class="material-icons">navigate_next</i>
+        </button>
+    </a>
+    {% endif %}
+</div>
+
+{% endif %}

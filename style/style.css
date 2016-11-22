@@ -1,0 +1,164 @@
+@import url("font-awesome.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    height: 85%;
+}
+
+
+.page-content {
+    min-height: 85%;
+}
+
+body {
+    margin: 0;
+    background-color: #eee;
+}
+
+#main {
+    min-height: 90%;
+}
+
+.card-adds {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.card-wrapper {
+    padding: 1em;
+}
+
+.card-image {
+    height: 450px;
+}
+
+.card-image-post {
+    height: 500px;
+}
+
+.footer-icons {
+    margin: 0 auto;
+    font-size: large;
+}
+
+.footer-wrapper {
+    margin: 0 auto;
+}
+
+.mdl-mini-footer {
+    height: 10%;
+}
+
+.nav-link:hover {
+    color: #E0E0E0;
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.mdl-mini-footer__link-list > li:hover {
+    color: #64B5F6;
+}
+
+.post-adds {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.card-content {
+    box-sizing: border-box;
+    padding: 3em;
+}
+
+.avatar {
+    border-radius: 100%;
+    width: 40px;
+}
+
+.date {
+    font-size: small;
+}
+
+.name {
+    color: #EF5350;
+}
+
+.shadow {
+    background: #fc0;/*
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);*/
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.my-mdl-button {
+    border: none;
+    border-radius: 2px;
+    color: white;
+    position: relative;
+    height: 36px;
+    margin: 0;
+    min-width: 5px;
+    padding: 0 10px;
+    display: inline-block;
+    background-color: #448AFF;
+@include typo-button();
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.my-mdl-button-transparent {
+    background: transparent;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    position: relative;
+    height: 36px;
+    margin: 0;
+    min-width: 5px;
+    padding: 0 10px;
+    display: inline-block;
+@include typo-button();
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.nav-foot {
+    text-decoration: none;
+}
+
+.pagination {
+    text-align: center;
+    padding-bottom: 2em;
+    margin: 0 auto;
+}
+
+.pages {
+    padding-left: 1em;
+    padding-right: 1em;
+}
