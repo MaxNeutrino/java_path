@@ -162,3 +162,83 @@ body {
     padding-left: 1em;
     padding-right: 1em;
 }
+
+.drawer-menu-header {
+    background: #F44336;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-image {
+        height: 450px;
+    }
+
+    .card-image-post {
+        height: 500px;
+    }
+
+    .card-content {
+        box-sizing: border-box;
+        padding: 3em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card-image {
+        height: 300px;
+    }
+
+    .card-image-post {
+        height: 400px;
+    }
+
+    .card-content {
+        box-sizing: border-box;
+        padding: 2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-image {
+        height: 340px;
+    }
+
+    .card-image-post {
+        height: 380px;
+    }
+
+    .card-content {
+        box-sizing: border-box;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card-image {
+        height: 225px;
+    }
+
+    .card-image-post {
+        height: 250px;
+    }
+
+    .card-content {
+        box-sizing: border-box;
+        padding: 0.5em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .card-image {
+        height: 170px;
+    }
+
+    .card-image-post {
+        height: 190px;
+    }
+
+    .card-content {
+        box-sizing: border-box;
+        padding: 0.3em;
+    }
+}

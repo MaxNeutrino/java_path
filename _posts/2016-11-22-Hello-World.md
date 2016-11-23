@@ -4,7 +4,7 @@ title: Hello World
 image: "hello.jpg"
 ---
 
-I can not ignored first step in any path of programmer - "Hello world!"
+I couldn`t ignore ignored first step in any path of programmer - "Hello world!"
 
 First when I learnt Java this example used with different strings like "Kiss my shiny metal ass". Eah, quote Bender is fun.
 <!--more-->
