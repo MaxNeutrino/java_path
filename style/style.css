@@ -19,6 +19,11 @@ main {
     min-height: 85%;
 }
 
+/*.fix {
+    display: flex;
+    position: fixed;
+}*/
+
 body {
     margin: 0;
     background-color: #eee;
@@ -184,6 +189,11 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+    /*.fix {
+        display: block;
+        position: relative;
+    }*/
+
     .card-image {
         height: 300px;
     }
