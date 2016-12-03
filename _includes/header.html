@@ -1,32 +1,10 @@
-<header class="mdl-layout__header  ">
-    <div class="mdl-layout--fixed-header  mdl-layout--large-screen-only">
-        <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <span class="mdl-layout-title">JAVA_PATH</span>
-            <!-- Add spacer, to align navigation to the right -->
-            <div class="mdl-layout-spacer"></div>
-            <!-- Navigation. We hide it in small screens. -->
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link nav-link" href="{{ site.baseurl }}">Blog</a>
-                <a class="mdl-navigation__link nav-link" href="https://maxneutrino.github.io/">About</a>
-            </nav>
-        </div>
+<header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--scroll">
+    {% if page.date %}
+    <div class="back">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="{{ site.baseurl }}"
+           title="go back" role="button">
+            <i class="material-icons" role="presentation">arrow_back</i>
+        </a>
     </div>
-
-    <div class=" mdl-layout__header--scroll mdl-layout--small-screen-only">
-        <div class="mdl-layout__header-row">
-            <!-- Title -->
-            <span class="mdl-layout-title">JAVA_PATH</span>
-            <!-- Add spacer, to align navigation to the right -->
-            <div class="mdl-layout-spacer"></div>
-        </div>
-    </div>
+    {% endif %}
 </header>
-
-<div class="mdl-layout__drawer mdl-layout--small-screen-only">
-    <span class="mdl-layout-title drawer-menu-header">JAVA_PATH</span>
-    <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="{{ site.baseurl }}">Blog</a>
-        <a class="mdl-navigation__link" href="https://maxneutrino.github.io/">About</a>
-    </nav>
-</div>

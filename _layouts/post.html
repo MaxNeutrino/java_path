@@ -2,70 +2,83 @@
 layout: default
 ---
 
-<article class="post">
+<article class="post page">
 
     <div class="card-wrapper">
 
         <div class="card-adds mdl-card mdl-shadow--2dp">
+
+
             {% if page.image %}
-            <div class="card-image-post"
-                 style="background: url({{ site.baseurl }}/images/posts/{{ page.image }}) center / cover"></div>
+            <div class="mdl-card__title card-image-post"
+                 style="background: url({{ site.baseurl }}/images/posts/{{ page.image }}) center / cover">
+                <h2 class="mdl-card__title-text mdl-color-text--white card-title-text">{{ page.title }}</h2>
+            </div>
+            {% else %}
+            <div class="mdl-card__title card-title-without-pic-post">
+                <h2 class="mdl-card__title-text mdl-color-text--white card-title-text">{{ page.title }}</h2>
+            </div>
             {% endif %}
+
+            <div class="date">
+                <p class="date">
+                    <span class="mdl-chip mdl-chip--contact mdl-color--grey-100">
+                        <a href="https://maxneutrino.github.io/">
+                            <img class="mdl-chip__contact" src="{{ site.baseurl }}/images/avatar.jpeg"></a>
+                        <span class="mdl-chip__text">
+                            <a href="https://maxneutrino.github.io/" style="text-decoration: none">
+                                <span class="name"><strong>Maxim,</strong></span></a>
+                            <span class="mdl-color-text--blue-grey-500">{{ page.date | date: "%B %e, %Y" }}</span>
+                        </span>
+                    </span>
+                </p>
+            </div>
+
             <div class="card-content">
-                <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text mdl-color-text--blue-grey-900">{{ page.title }}</h2>
-                </div>
                 <div class="mdl-card__supporting-text mdl-color-text--blue-grey-800">
-                    <div class="date">
-                        <p class="date">
-                            <span class="mdl-chip mdl-chip--contact mdl-color--grey-100">
-                                <img class="mdl-chip__contact" src="{{ site.baseurl }}/images/avatar.jpeg">
-                                <span class="mdl-chip__text">
-                                    <span class="name"><b>Maxim,</b></span>
-                                    <span class="mdl-color-text--blue-grey-500">{{ page.date | date: "%B %e, %Y" }}</span>
-                                </span>
-                            </span>
-                        </p>
-                    </div>
+
                     <div class="entry">
                         <p>
                             {{ content }}
                         </p>
                     </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border ">
-                    {% if page.next %}
-                    <a href="{{ site.baseurl }}{{ page.next.url }}" class="nav-foot">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                            <i class="material-icons">navigate_before</i> Newer
-                        </button>
-                    </a>
-                    {% else %}
-                    <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent">
-                        Next
-                    </button>-->
-                    {% endif %}
-
-                    {% if page.previous %}
-                    <a href="{{ site.baseurl }}{{ page.previous.url }}" class="nav-foot" style="float: right">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                            Older  <i class="material-icons">navigate_next</i>
-                        </button>
-                    </a>
-                    {% else %}
-                    <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent">
-                        Previous
-                    </button>-->
-                    {% endif %}
-                </div>
             </div>
+            <div class="mdl-card__actions mdl-card--border ">
+                {% if page.next %}
+                <a href="{{ site.baseurl }}{{ page.next.url }}" class="nav-foot">
+                    <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">navigate_before</i> Newer
+                    </button>
+                </a>
+                {% else %}
+                <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent">
+                    Next
+                </button>-->
+                {% endif %}
+
+                {% if page.previous %}
+                <a href="{{ site.baseurl }}{{ page.previous.url }}" class="nav-foot" style="float: right">
+                    <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Older <i class="material-icons">navigate_next</i>
+                    </button>
+                </a>
+                {% else %}
+                <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent">
+                    Previous
+                </button>-->
+                {% endif %}
+            </div>
+
         </div>
     </div>
 
     <div class="card-wrapper">
         <div class="card-adds mdl-card mdl-shadow--2dp">
             <div class="card-content">
-                {% include disqus.html %}
+                <div class="disqus">
+                    {% include disqus.html %}
+                </div>
             </div>
         </div>
     </div>

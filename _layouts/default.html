@@ -5,8 +5,6 @@
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!--<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />-->
@@ -19,13 +17,12 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.red-blue.min.css"/>
-    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 
     <link rel="stylesheet" href="{{ site.baseurl }}/style/style.css"/>
 
 </head>
 
-<body>
+<body style="background: url({{ site.baseurl }}/images/bg.jpg) center / cover">
 <div class="mdl-layout mdl-js-layout layout">
     {% include header.html %}
 
@@ -43,5 +40,8 @@
 </div>
 
 {% include analytics.html %}
+
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 </body>
 </html>
