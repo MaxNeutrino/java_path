@@ -23,11 +23,9 @@
 </head>
 
 <body style="background: url({{ site.baseurl }}/images/bg.jpg) center / cover">
-<div class="mdl-layout mdl-js-layout layout">
-    {% include header.html %}
-
-
+<div class="mdl-layout mdl-js-layout">
     <main class="mdl-layout__content">
+        {% include header.html %}
         <div class="page-content">
             <div id="main" role="main" class="container">
                 {{ content }}

@@ -1,10 +1,7 @@
-<header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--scroll">
-    {% if page.date %}
-    <div class="back">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="{{ site.baseurl }}"
-           title="go back" role="button">
-            <i class="material-icons" role="presentation">arrow_back</i>
-        </a>
-    </div>
-    {% endif %}
-</header>
+{% if page.date %}
+<div class="back">
+    <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="{{ site.baseurl }}">
+        <i class="material-icons">arrow_back</i>
+    </a>
+</div>
+{% endif %}
