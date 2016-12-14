@@ -6,7 +6,7 @@
 name: JAVA_PATH
 
 # Short bio or description (displayed in the header)
-description: Java Development
+description: Java Dev Blog
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -32,7 +32,7 @@ url: "https://maxneutrino.github.io"
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/java_path"
+baseurl: "/java_path/"
 
 # Pagination
 paginate: 5
@@ -68,6 +68,10 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate
+  - jekyll-archives
+
+jekyll-archives:
+  enabled: ['tags']
 
 # Exclude these files from your production _site
 exclude:

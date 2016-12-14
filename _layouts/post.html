@@ -42,9 +42,21 @@ layout: default
                             {{ content }}
                         </p>
                     </div>
+
+                    <div class="tag">
+                        {% for tag in page.tags %}
+                        {% assign t = tag | slugify %}
+                        <a href="{{ site.jekyll-archives.permalinks.tag | prepend: site.baseurl | replace: ':name', t | replace: '//', '/' }}">
+                        <span class="mdl-chip">
+                            <span class="mdl-chip__text">{{ tag | capitalize }}</span>
+                        </span>
+                        </a>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
             <div class="mdl-card__actions mdl-card--border ">
+
                 {% if page.next %}
                 <a href="{{ site.baseurl }}{{ page.next.url }}" class="nav-foot">
                     <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div id="post">
+
+    <div class="back">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="{{ site.baseurl }}">
+            <i class="material-icons mdl-layout--large-screen-only mdl-color-text--white">arrow_back</i>
+            <i class="material-icons mdl-layout--small-screen-only mdl-color-text--blue-grey-500">arrow_back</i>
+        </a>
+    </div>
+
+    <div class="archive-chip">
+        <span class="mdl-chip mdl-shadow--2dp mdl-color--white">
+            <span class="mdl-chip__text mdl-color-text--blue-grey-700">{{ page.title }}</span>
+        </span>
+    </div>
+
+    <div id="post-content">
+        <div id="archive">
+            {% for post in page.posts %}
+            <div class="card-wrapper">
+                <div class="card-adds mdl-card mdl-shadow--2dp tags-card">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text mdl-color-text--blue-grey-700 card-title-text">{{ post.title
+                            }}</h2>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <div class="date-main line">
+                            <span class="mdl-chip mdl-color--white">
+                                <span class="mdl-chip__text">
+                                    <span class="mdl-color-text--blue-grey-300">{{ post.date | date: "%B %e, %Y" }}</span>
+                                </span>
+                            </span>
+                        </div>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect read-more"
+                           href="{{ post.url | prepend: site.baseurl }}">
+                            Read</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

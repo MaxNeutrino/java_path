@@ -26,6 +26,10 @@ layout: default
                             {{ post.excerpt }}
                         </div>
                     </div>
+
+                    {% for tag in site.tags %}
+                        {{ tag.name }}
+                    {% endfor %}
                     <div class="mdl-card__actions mdl-card--border">
                         <div class="date-main line">
                             <span class="mdl-chip mdl-color--white">

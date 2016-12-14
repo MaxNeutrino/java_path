@@ -6,14 +6,32 @@
 }
 
 html, body{
-    height: 100%;
+    min-height: 100%;
     margin: 0;
+    overflow-y: auto;
+}
+
+.mdl-layout {
+    min-height: 100%;
 }
 
 main {
     height: 85%;
 }
 
+#post-content {
+    padding-top: 2em;
+    padding-bottom: 15em;
+}
+
+.tag {
+    text-align: right;
+    text-decoration: none;
+}
+
+.tag a {
+    text-decoration: none;
+}
 
 .page-content {
     min-height: 85%;
@@ -63,6 +81,21 @@ body {
     color: white;
     z-index: 9999;
 }
+
+/*===============ARCHIVE================*/
+.archive-chip {
+    text-align:center;
+    margin-top: 3em;
+}
+
+.archive-chip span {
+    margin: 0 auto;
+}
+
+.archive-chip span span {
+    margin: 0 auto;
+}
+
 /*=============CARDS==================*/
 .card-adds {
     width: 850px;
@@ -135,6 +168,9 @@ body {
     border-radius: 2px;
 }
 
+.tags-card {
+    min-height: 100px
+}
 /*===============BUTTON================*/
 
 .my-mdl-button {
